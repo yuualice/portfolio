@@ -2,19 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.gradient-circle {
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+  top: -30px;
+  height: 40px;
+  width: 100vw;
+  opacity: 0.5;
+  filter: blur(40px);
+  background: radial-gradient(
+    circle,
+    rgba(47, 140, 250, 1) 0%,
+    rgba(107, 107, 248, 0.8) 100%
+  );
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+.name {
+  @apply font-bold;
+}
+
+.highlight-link {
+  @apply transition;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 3px;
+  text-decoration: none;
+  box-shadow: inset 0 -3px 0 blue;
+}
+:hover .highlight-link {
+  @apply transition;
+  box-shadow: inset 0 -33px 0 0 blue;
+  color: white;
+}
+
+/* :root {
+  /* --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255; */
+
+/* Styling for Landing Page */
+.landing-container {
+  @apply flex flex-col items-center justify-center w-screen h-screen overflow-hidden;
+}
+.landing-content {
+  @apply flex flex-col justify-center w-3/4 h-full;
+}
+.nav-container {
+  @apply absolute top-0 right-0 flex flex-row  items-start content-start justify-between w-full px-6 py-4;
+}
+
+.nav-button {
+  @apply text-base px-2 py-2 rounded-lg border-spacing-4 text-neutral-800;
+}
+
+/* Styling for project cards */
+.project-container {
+  @apply flex flex-col items-center justify-center w-screen overflow-hidden;
+}
+.project {
+  @apply w-3/4 md:mb-0 mb-4 mt-6 font-bold text-blue-700 text-2xl md:text-4xl text-left;
+}
+.project-card {
+  @apply flex flex-col bg-white shadow-lg rounded-lg h-1/2 m-4 p-3;
+}
+
+.project-header {
+  @apply text-neutral-800 font-bold text-xl text-left px-4 py-2;
+}
+
+.project-description {
+  @apply text-neutral-800 text-sm text-left px-4 py-2;
+}
+
+.project-link {
+  @apply text-xs text-left text-blue-600 font-light px-4 py-2;
+}
+.project-used {
+  @apply text-xs text-left px-3 py-2;
+}
+.used-button {
+  @apply text-xs px-1 py-1 m-1 text-blue-600 border-blue-600  rounded-md border;
+}
+
+/* styling for footer */
+.footer-container {
+  @apply w-screen h-1/5 mt-12 mb-10;
+}
+.footer-content {
+  @apply flex flex-col items-center justify-center;
+}
+/* :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+}@media (prefers-color-scheme: dark) {
+ */
 
 body {
   color: rgb(var(--foreground-rgb));
