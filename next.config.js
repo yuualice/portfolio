@@ -1,9 +1,4 @@
-// next.config.js
-const isProd = process.env.NODE_ENV === "production";
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-module.exports = {
-  assetPrefix: isProd ? "/yuualice.github.io/" : "",
-  images: {
-    unoptimized: true,
-  },
-};
+module.exports = nextConfig;
