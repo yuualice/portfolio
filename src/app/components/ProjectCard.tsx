@@ -38,9 +38,9 @@ export function ProjectCard(): JSX.Element {
               <div className="project-used" key={index}>
                 {project.used.map((item, index) => {
                   return (
-                    <button className="used-button" key={index}>
+                    <span className="used-button" key={index}>
                       {item}
-                    </button>
+                    </span>
                   );
                 })}
               </div>

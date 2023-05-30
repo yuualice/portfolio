@@ -5,16 +5,16 @@ export function Navbar(): JSX.Element {
   return (
     <nav className="nav-container">
       <div className="landing-button-container">
-        <a href="#About">
+        <a href="#about">
           <button className="nav-button">About</button>
         </a>
         <a href="#project">
           <button className="nav-button">Projects</button>
         </a>
         {/* TO DO: Implement Contact Form */}
-        {/* <a href="#contact">
-          <button className="nav-button">Contact</button>
-        </a> */}
+        <a href="#experience">
+          <button className="nav-button">Experience</button>
+        </a>
       </div>
       <a
         href="https://github.com/yuualice"

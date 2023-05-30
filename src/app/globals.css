@@ -42,6 +42,16 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255; */
 
+/* styling for navbar */
+
+.nav-container {
+  @apply absolute top-0 right-0 flex flex-row  items-start content-start justify-between w-full px-10 py-7;
+}
+
+.nav-button {
+  @apply text-base px-2 mr-4 py-2 rounded-lg border-spacing-4 text-neutral-800;
+}
+
 /* Styling for Landing Page */
 .landing-container {
   @apply flex flex-col items-center justify-center w-screen h-screen overflow-hidden;
@@ -49,14 +59,6 @@
 .landing-content {
   @apply flex flex-col justify-center w-3/4 h-full;
 }
-.nav-container {
-  @apply absolute top-0 right-0 flex flex-row  items-start content-start justify-between w-full px-6 py-4;
-}
-
-.nav-button {
-  @apply text-base px-2 py-2 rounded-lg border-spacing-4 text-neutral-800;
-}
-
 /* Styling for project cards */
 .project-container {
   @apply flex flex-col items-center justify-center w-screen overflow-hidden;
@@ -80,7 +82,7 @@
   @apply text-xs text-left text-blue-600 font-light px-4 py-2;
 }
 .project-used {
-  @apply text-xs text-left px-3 py-2;
+  @apply flex flex-wrap text-xs text-left px-3 py-2;
 }
 .used-button {
   @apply text-xs px-1 py-1 m-1 text-blue-600 border-blue-600  rounded-md border;
