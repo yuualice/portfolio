@@ -26,8 +26,8 @@ export const projectData = [
     period: "January 2021 - April 2021",
     description:
       "Volunteer managment web application for the Dental Clinic Wake Smiles",
-    link: "https://mysmile.vercel.app/",
-    // "https://mysmile-admin.vercel.app/",
+    link: "https://mysmile-admin.vercel.app/",
+    // "https://mysmile.vercel.app/",
     image: "/wakesmiles-mockup.png",
     used: ["TypeScript", "Next.js", "TailwindCSS", "Supabase", "Node.js"],
   },
