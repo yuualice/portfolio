@@ -62,6 +62,12 @@
   @apply flex flex-wrap justify-center items-center bg-blue-800 border rounded-full;
 }
 
+/* styling for experience page */
+
+.experience-container {
+  @apply flex flex-col items-center justify-center w-screen h-screen overflow-hidden;
+}
+
 /* Styling for project cards */
 .project-container {
   @apply flex flex-col md:flex-row justify-center items-center w-screen overflow-hidden;

@@ -34,7 +34,7 @@ export function Landing(): JSX.Element {
             </span>
           </h3>
         </div>
-        <div className="hidden items-center justify-center md:w-1/4 md:flex md:flex-row md:ml-10">
+        <div className="hidden items-center justify-center md:w-1/4 md:flex md:flex-row md:ml-14">
           <Image
             className="landing-image"
             src="/profile.jpg"
