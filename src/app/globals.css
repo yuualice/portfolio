@@ -57,22 +57,22 @@
 }
 .landing-content {
   @apply flex flex-col md:flex-row justify-center w-3/4 h-full;
+  line-height: 1.5;
 }
 .landing-image {
   @apply flex flex-wrap justify-center items-center bg-blue-800 border rounded-full;
 }
 
-/* styling for experience page */
-
-.experience-container {
-  @apply flex flex-col items-center justify-center w-screen h-screen overflow-hidden;
-}
-
 /* Styling for project cards */
-.project-container {
+.section {
   @apply flex flex-col md:flex-row justify-center items-center w-screen overflow-hidden;
 }
-.project-title {
+
+.content {
+  @apply flex flex-col pt-14 md:justify-between md:flex-row w-3/4 h-full items-stretch;
+}
+
+.title {
   @apply self-start w-3/4 md:w-1/6 mb-2 md:mr-5 font-bold text-blue-700 text-2xl md:text-4xl text-left;
 }
 .project-card {

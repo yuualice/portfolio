@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export function ProjectCard(): JSX.Element {
   return (
-    <div className="project-container" id="project">
-      <div className="flex flex-col mt-5 md:justify-between md:flex-row w-3/4 h-full items-stretch">
-        <h1 className="project-title">Featured projects.</h1>
-        <div className="flex flex-col self-center lg:max-w-2xl md:max-w-l max-w-md">
+    <section className="section" id="project">
+      <div className="content">
+        <h1 className="title">Featured projects.</h1>
+        <div className="flex flex-col self-center lg:max-w-xl md:max-w-l max-w-md">
           {projectData.map((project, index) => {
             return (
               <div className="project-card" key={index}>
@@ -50,7 +50,7 @@ export function ProjectCard(): JSX.Element {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
