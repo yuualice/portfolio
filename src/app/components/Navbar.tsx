@@ -5,13 +5,11 @@ export function Navbar(): JSX.Element {
   return (
     <nav className="nav-container">
       <div className="landing-button-container">
-        {/* <a href="#about"> */}
-
-        <a href="#about" className="nav-button">
+        <a href="/" className="nav-button">
           About
         </a>
-        <a href="#experience">
-          <button className="nav-button">Experience</button>
+        <a href="#experience" className="nav-button">
+          Experience
         </a>
         <a href="#project" className="nav-button">
           Projects
@@ -24,7 +22,7 @@ export function Navbar(): JSX.Element {
         rel="noopener noreferrer"
       >
         <Image
-          className="items-center mt-2"
+          className="items-center"
           src="/github.svg"
           width={25}
           height={25}

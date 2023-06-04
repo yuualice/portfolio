@@ -1,7 +1,6 @@
 import ProjectCard from "./components/ProjectCard";
 import Landing from "./components/Landing";
 import Footer from "./components/Footer";
-import About from "./components/About";
 import Experience from "./components/Experience";
 
 export default function Home() {
